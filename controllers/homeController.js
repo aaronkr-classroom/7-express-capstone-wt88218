@@ -7,14 +7,14 @@
  */
 exports.showCourses = (req, res) => {
     res.render("courses");
-}
+};
 
 exports.showSignUp = (req, res) => {
     res.render("contact");
-}
+};
 exports.postedSignUpForm = (req, res) =>{
     res.render("thanks");
-}
+};
 
 /**
  * Listing 12.9 (p. 182)
@@ -44,4 +44,4 @@ exports.showCourses = (req, res) => {
     res.render("courses", {
         offeredCourses: courses
     });
-};
+}; 

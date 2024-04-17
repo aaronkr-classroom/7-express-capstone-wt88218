@@ -14,7 +14,7 @@ app.set("port", process.env.PORT || 3000);
 
 app.get("/", (req, res) => {
     res.send("Welcome to Confetti cuisine!");
-})
+});
 
 /**
  * Listing 12.7 (p. 179)
