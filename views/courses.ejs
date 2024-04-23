@@ -32,27 +32,7 @@
   <body>
     <!-- @TODO: partials/header.ejs -->
     <!-- @TODO: 로고가 있는 헤더와 4개 이상의 항목이 포함된 탐색 메뉴를 생성하십시오 -->
-    <header class="header">
-      <div class="container">
-        <div class="container-left">
-          <figure class="logo">
-            <a href="/">
-              <h1 class="site-title">🍔 Aaron's Node Site</h1>
-            </a>
-          </figure>
-          
-          <!-- @TODO: partials/navigation.ejs -->
-          <nav class="menu">
-            <a class="menu-item" href="/courses">Courses</a>
-            <a class="menu-item" href="/contact">Contact</a>
-          </nav>
-          <!-- @TODO: 반응형 메뉴 버튼을 생성하십시오 -->
-          <!-- 이것은 나중에 JavaScript에서 사용될 것이다 -->
-          <div id="menu-button">Menu</div>
 
-        </div>
-      </div>
-    </header>
 
     <!-- @TODO: courses.ejs -->
     <main class="">
@@ -165,7 +145,6 @@
     
       <!-- @TODO: Loop through & display dynamic content -->
       <div class="container">
-        <% /* listing 12.10 작성.. */ %>
         <h1>Our Courses</h1>
           <% offeredCourses.forEach(course => { %>
             <h5> <%= course.title %> </h5>
@@ -177,10 +156,7 @@
 
 
     <!-- @TODO: partials/footer.ejs -->
-    <footer class="text-center fixed-bottom bg-dark text-bg-dark pt-3">
-      <p>&copy; 2023 Aaron Snowberger</p>
-    </footer>
-
+    
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 

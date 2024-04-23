@@ -9,8 +9,8 @@ const httpStatus = require("http-status-codes");
  * Listing 11.2 (p. 168)
  */
 exports.logErrors = (error, req, res, next) => {
-    console.error(err.stack);
-    next(err);
+    console.error(error.stack);
+    next(error);
 };
 
 /**
@@ -18,6 +18,8 @@ exports.logErrors = (error, req, res, next) => {
  * 에러 처리 라우트 추가
  * 
  */
+
+
 exports.pageNotFoundError = (req, res) => {
     let errorCode = httpStatus.NOT_FOUND;
     res.status(errorCode);

@@ -10,12 +10,14 @@
   "author": "Aaron Snowberger",
   "license": "ISC",
   "devDependencies": {
+    "nodemo": "^1.0.0",
     "nodemon": "^3.1.0"
   },
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^4.19.2",
     "express-ejs-layouts": "^2.5.1",
+    "http-status-code": "^2.1.0",
     "http-status-codes": "^2.3.0"
   }
 }
